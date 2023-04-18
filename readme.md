@@ -1,6 +1,6 @@
-# react-ts-strict-eslint-config
+# ts-strict-eslint-config
 
-Very strict ESLint config for React projects using TypeScript.
+Very strict ESLint config for projects using TypeScript.
 
 ## Installation
 
@@ -16,17 +16,17 @@ yarn add react-ts-strict-eslint-config --dev
 
 ## Usage/Examples
 
-After installing the package, you can use it in your ESLint configuration file by extending the react-ts-strict configuration:
+After installing the package, you can use it in your ESLint configuration file by extending the ts-strict configuration:
 
 ```javascript
 {
-  "extends": "react-ts-strict"
+  "extends": "ts-strict"
 }
 ```
 
 ### configuration
 
-The `react-ts-strict` configuration extends the following ESLint configurations:
+The `ts-strict` configuration extends the following ESLint configurations:
 
 - `eslint:recommended`
 - `plugin:@typescript-eslint/recommended`

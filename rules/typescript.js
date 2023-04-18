@@ -628,6 +628,28 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
     "object-curly-spacing": "off",
     "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "@typescript-eslint/block-spacing": ["error", "always"],
+    "@typescript-eslint/key-spacing": [
+      "error",
+      {
+        beforeColon: false,
+        afterColon: true,
+        mode: "strict",
+      }],
+    "@typescript-eslint/lines-around-comment": [
+      "error",
+      {
+        beforeBlockComment: true,
+        afterBlockComment: false,
+        beforeLineComment: true,
+        afterLineComment: false,
+      }
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error"
+
   },
   overrides: [
     {

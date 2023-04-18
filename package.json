@@ -1,7 +1,7 @@
 {
-  "name": "react-ts-strict-eslint-config",
+  "name": "ts-strict-eslint-config",
   "version": "1.0.0",
-  "description": "Very strict ESLint config for React projects using TypeScript",
+  "description": "Very strict ESLint config for projects using TypeScript",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
