@@ -33,8 +33,6 @@ The `ts-strict` configuration extends the following ESLint configurations:
 - `plugin:@typescript-eslint/recommended-requiring-type-checking`
 - `plugin:import/recommended`
 - `plugin:import/typescript`
-- `plugin:react/recommended`
-- `plugin:react-hooks/recommended`
 - `plugin:jsx-a11y/recommended`
 
 It also includes additional rules to enforce strict coding standards. The individual rule sets are located in the `rules/` directory and can be extended separately if desired.
