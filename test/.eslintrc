@@ -1,0 +1,6 @@
+{
+  "rules": {
+    // tests uses `t` for tape
+    "id-length": [2, { "min": 2, "properties": "never", "exceptions": ["t"] }]
+  }
+}
