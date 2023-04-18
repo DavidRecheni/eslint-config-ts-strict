@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-strict-mode",
+  "name": "eslint-config-ts-strict",
   "version": "1.0.0",
   "description": "Very strict ESLint config for projects using TypeScript",
   "main": "index.js",
