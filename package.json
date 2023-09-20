@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very strict ESLint config for projects using TypeScript",
   "main": "index.js",
   "exports": {
@@ -33,35 +33,34 @@
   "author": "David Recheni <http://davidrecheni.com>",
   "license": "MIT",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
     "eslint": "^8.2.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0"
+    "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
     "@babel/runtime": "^7.20.13",
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "@typescript-eslint/parser": "^5.59.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
     "babel-tape-runner": "^3.0.0",
     "doctoc": "2.2.1",
     "eclint": "^2.8.1",
-    "eslint": "^8.32.0",
+    "eslint": "^8.49.0",
     "eslint-find-rules": "^4.1.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "in-publish": "^2.0.1",
     "safe-publish-latest": "^2.0.0",
     "tape": "^5.6.3",
-    "typescript": "^5.0.4"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",
     "object.assign": "^4.1.4",
-    "object.entries": "^1.1.6",
-    "semver": "^7.3.8"
-  },
-  "packageManager": "yarn@3.5.0"
+    "object.entries": "^1.1.7",
+    "semver": "^7.5.4"
+  }
 }

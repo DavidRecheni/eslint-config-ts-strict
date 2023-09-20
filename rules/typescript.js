@@ -503,8 +503,7 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/restrict-plus-operands.md
     "@typescript-eslint/restrict-plus-operands": [
-      "error",
-      { checkCompoundAssignments: true },
+      "error"
     ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
@@ -648,8 +647,8 @@ module.exports = {
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-mixed-enums": "error",
-    "@typescript-eslint/no-unsafe-enum-comparison": "error"
-
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/class-methods-use-this": "off",
   },
   overrides: [
     {
