@@ -390,5 +390,7 @@ module.exports = {
     // require or disallow Yoda conditions
     // https://eslint.org/docs/rules/yoda
     yoda: "error",
+
+    "no-object-constructor": "error",
   },
 };

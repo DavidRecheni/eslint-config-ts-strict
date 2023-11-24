@@ -649,6 +649,9 @@ module.exports = {
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-unsafe-enum-comparison": "error",
     "@typescript-eslint/class-methods-use-this": "off",
+    "@typescript-eslint/max-params": ["error", { max: 3 }],
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "@typescript-eslint/prefer-destructuring": "error",
   },
   overrides: [
     {
