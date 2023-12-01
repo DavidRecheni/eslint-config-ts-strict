@@ -515,9 +515,6 @@ module.exports = {
     // https://typescript-eslint.io/rules/sort-type-constituents
     "@typescript-eslint/sort-type-constituents": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
-    "@typescript-eslint/sort-type-union-intersection-members": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
     "@typescript-eslint/strict-boolean-expressions": "off",
 
