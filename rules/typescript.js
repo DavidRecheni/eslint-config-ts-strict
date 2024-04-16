@@ -57,7 +57,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
     "@typescript-eslint/consistent-type-assertions": [
       "error",
-      { assertionStyle: "as", objectLiteralTypeAssertions: "never" },
+      { assertionStyle: "as", objectLiteralTypeAssertions: "allow", },
     ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
@@ -566,13 +566,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     // https://github.com/sweepline/eslint-plugin-unused-imports
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-vars-ts": "off",
     "unused-imports/no-unused-imports-ts": "off",
-    "unused-imports/no-unused-vars": [
-      "error",
-      { vars: "all", args: "after-used", ignoreRestSiblings: true },
-    ],
+    "unused-imports/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+
     "unused-imports/no-unused-imports": "error",
 
     // https://typescript-eslint.io/rules/no-unsafe-declaration-merging/
@@ -649,6 +647,11 @@ module.exports = {
     "@typescript-eslint/max-params": ["error", { max: 3 }],
     "@typescript-eslint/no-unsafe-unary-minus": "error",
     "@typescript-eslint/prefer-destructuring": "error",
+    "@typescript-eslint/no-array-delete": "error",
+    "@typescript-eslint/no-useless-template-literals": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
+
   },
   overrides: [
     {
