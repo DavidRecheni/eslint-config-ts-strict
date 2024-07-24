@@ -651,7 +651,14 @@ module.exports = {
     "@typescript-eslint/no-useless-template-literals": "error",
     "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-promise-reject-errors": "error",
-
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
+    "@typescript-eslint/no-empty-object-type": "error",
+    "@typescript-eslint/only-throw-error": "error",
+    "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
+    "@typescript-eslint/no-unsafe-function-type": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-wrapper-object-types": "error"
   },
   overrides: [
     {
