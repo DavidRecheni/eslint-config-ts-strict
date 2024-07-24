@@ -90,14 +90,7 @@ module.exports = {
     "@typescript-eslint/init-declarations": "off",
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-delimiter-style.md
-    "@typescript-eslint/member-delimiter-style": [
-      "error",
-      {
-        multiline: {
-          delimiter: "none",
-        },
-      },
-    ],
+    "@typescript-eslint/member-delimiter-style": "error",
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/method-signature-style.md
     "@typescript-eslint/method-signature-style": ["error", "property"],
@@ -633,6 +626,7 @@ module.exports = {
     "@typescript-eslint/lines-around-comment": [
       "error",
       {
+        allowModuleStart: true,
         beforeBlockComment: true,
         afterBlockComment: false,
         beforeLineComment: true,
