@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Very strict ESLint config for projects using TypeScript",
   "main": "index.js",
   "exports": {

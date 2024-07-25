@@ -30,7 +30,7 @@ module.exports = {
 
     // require return statements to either always or never specify values
     // https://eslint.org/docs/rules/consistent-return
-    "consistent-return": "error",
+    "consistent-return": "off",
     "@typescript-eslint/consistent-return": "error",
 
     // specify curly brace conventions for all control statements
