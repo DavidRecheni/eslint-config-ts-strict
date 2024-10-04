@@ -155,6 +155,8 @@ module.exports = {
     "func-call-spacing": "off",
     "@typescript-eslint/func-call-spacing": ["error", "never"],
 
+    "@typescript-eslint/no-deprecated": "error",
+    "@typescript-eslint/no-restricted-types": "off",
     // Replace Airbnb 'indent' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
     indent: "off",
