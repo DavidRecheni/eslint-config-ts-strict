@@ -31,9 +31,6 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
     "@typescript-eslint/ban-tslint-comment": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-types.md
-    "@typescript-eslint/ban-types": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
     "brace-style": "off",
     "@typescript-eslint/brace-style": [
@@ -221,13 +218,6 @@ module.exports = {
       },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
-    "lines-between-class-members": "off",
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-      "always",
-      { exceptAfterSingleLine: true },
-    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-ordering.md
     "@typescript-eslint/member-ordering": "error",
@@ -644,7 +634,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-unary-minus": "error",
     "@typescript-eslint/prefer-destructuring": "error",
     "@typescript-eslint/no-array-delete": "error",
-    "@typescript-eslint/no-useless-template-literals": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
     "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-promise-reject-errors": "error",
     "@typescript-eslint/no-unnecessary-template-expression": "error",
