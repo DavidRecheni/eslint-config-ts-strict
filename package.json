@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "description": "Very strict ESLint config for projects using TypeScript",
   "main": "index.js",
   "exports": {
@@ -13,6 +13,7 @@
     "./rules/errors": "./rules/errors.js",
     "./rules/imports": "./rules/imports.js",
     "./rules/strict": "./rules/strict.js",
+    "./rules/stylistic": "./rules/stylistic.js",
     "./rules/variables": "./rules/variables.js",
     "./package.json": "./package.json"
   },
