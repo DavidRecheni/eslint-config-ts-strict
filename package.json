@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Very strict ESLint config for projects using TypeScript, React and Prettier",
   "main": "index.js",
   "exports": {

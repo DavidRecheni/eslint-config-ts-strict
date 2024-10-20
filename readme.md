@@ -7,11 +7,11 @@ Strongly opinionated ESLint config for projects using TypeScript, React and Pret
 Install my-project with `npm` or `yarn`
 
 ```bash
- npm install react-ts-strict-eslint-config --save-dev
+npm i eslint-config-ts-strict
 ```
 
 ```bash
-yarn add react-ts-strict-eslint-config --dev
+yarn add eslint-config-ts-strict --dev
 ```
 
 ## Usage/Examples
