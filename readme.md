@@ -1,6 +1,6 @@
 # ts-strict-eslint-config
 
-Very strict ESLint config for projects using TypeScript.
+Strongly opinionated ESLint config for projects using TypeScript, React and Prettier.
 
 ## Installation
 
@@ -20,7 +20,11 @@ After installing the package, you can use it in your ESLint configuration file b
 
 ```javascript
 {
-  "extends": "ts-strict"
+  "extends": ["ts-strict", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest"
+  }
 }
 ```
 
