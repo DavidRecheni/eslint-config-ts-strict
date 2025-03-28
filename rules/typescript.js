@@ -647,6 +647,7 @@ module.exports = {
     "@typescript-eslint/no-wrapper-object-types": "error",
     "@typescript-eslint/no-unsafe-type-assertion": "warn",
     "@typescript-eslint/related-getter-setter-pairs": "error",
+    "@typescript-eslint/no-misused-spread": "error",
   },
   overrides: [
     {
