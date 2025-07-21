@@ -62,9 +62,6 @@ export default {
     "init-declarations": "off",
     "@typescript-eslint/init-declarations": "off",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-delimiter-style.md
-    "@typescript-eslint/member-delimiter-style": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/method-signature-style.md
     "@typescript-eslint/method-signature-style": ["error", "property"],
 
@@ -155,9 +152,6 @@ export default {
     "@typescript-eslint/no-extra-parens": "off",
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
-    "no-extra-semi": "off",
-    "@typescript-eslint/no-extra-semi": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-extraneous-class.md
     "@typescript-eslint/no-extraneous-class": [
       "error",
@@ -395,9 +389,6 @@ export default {
       { types: "prefer-import" },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/type-annotation-spacing.md
-    "@typescript-eslint/type-annotation-spacing": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/typedef.md
     "@typescript-eslint/typedef": "off",
 
@@ -450,14 +441,6 @@ export default {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error",
-
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
-    quotes: "off",
-    "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
-
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
-    semi: "off",
-    "@typescript-eslint/semi": ["error", "always"],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-await.md
     "require-await": "off",

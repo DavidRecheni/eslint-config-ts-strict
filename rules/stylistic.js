@@ -2,7 +2,7 @@ export default {
   rules: {
     // Stylistic rules that apply to TypeScript
     "lines-between-class-members": "off",
-    "@stylistic/ts/lines-between-class-members": ["error", "always", { "exceptAfterOverload": true }],
+    "@stylistic/lines-between-class-members": ["error", "always", { "exceptAfterOverload": true }],
 
     // Brace style
     "brace-style": "off",
@@ -140,5 +140,23 @@ export default {
         afterLineComment: false,
       }
     ],
+
+    // Member delimiter style for interfaces and type literals
+    "@stylistic/member-delimiter-style": "error",
+
+    // Extra semicolons
+    "no-extra-semi": "off",
+    "@stylistic/no-extra-semi": "error",
+
+    // Type annotation spacing
+    "@stylistic/type-annotation-spacing": "error",
+
+    // Quotes
+    "quotes": "off",
+    "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
+
+    // Semicolons
+    "semi": "off",
+    "@stylistic/semi": ["error", "always"],
   }
 }
