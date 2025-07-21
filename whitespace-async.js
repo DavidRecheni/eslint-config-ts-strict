@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
-const assign = require("object.assign");
-const entries = require("object.entries");
-const { ESLint } = require("eslint");
+import objectAssign from "object.assign";
+import objectEntries from "object.entries";
+import { ESLint } from "eslint";
+import { fileURLToPath } from 'url';
+import path from 'path';
 
-const baseConfig = require(".");
+import baseConfig from "./index.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const severities = ["off", "warn", "error"];
 
@@ -19,15 +23,15 @@ function getSeverity(ruleConfig) {
 }
 
 async function onlyErrorOnRules(rulesToError, config) {
-  const errorsOnly = assign({}, config);
+  const errorsOnly = objectAssign({}, config);
   const cli = new ESLint({
     useEslintrc: false,
     baseConfig: config,
   });
-  const baseRules = (await cli.calculateConfigForFile(require.resolve("./")))
+  const baseRules = (await cli.calculateConfigForFile(path.join(__dirname, "index.js")))
     .rules;
 
-  entries(baseRules).forEach((rule) => {
+  objectEntries(baseRules).forEach((rule) => {
     const ruleName = rule[0];
     const ruleConfig = rule[1];
     const severity = getSeverity(ruleConfig);

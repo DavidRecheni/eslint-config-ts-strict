@@ -1,16 +1,4 @@
-module.exports = {
-  env: {
-    es6: true,
-  },
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: "module",
-    ecmaFeatures: {
-      generators: false,
-      objectLiteralDuplicateProperties: false,
-    },
-  },
-
+export default {
   rules: {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style

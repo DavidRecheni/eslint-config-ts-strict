@@ -2,44 +2,115 @@
 
 Strongly opinionated ESLint config for projects using TypeScript, React and Prettier.
 
+**ESLint v9 flat config only** - This package requires ESLint v9 and uses the modern flat configuration format.
+
 ## Installation
 
-Install my-project with `npm` or `yarn`
+Install the package with `npm`, `yarn`, or `pnpm`:
 
 ```bash
-npm i eslint-config-ts-strict
+npm i eslint-config-ts-strict --save-dev
 ```
 
 ```bash
 yarn add eslint-config-ts-strict --dev
 ```
 
-## Usage/Examples
-
-After installing the package, you can use it in your ESLint configuration file by extending the ts-strict configuration:
-
-```javascript
-{
-  "extends": ["ts-strict", "plugin:prettier/recommended"],
-  "parserOptions": {
-    "project": "./tsconfig.json",
-    "ecmaVersion": "latest"
-  }
-}
+```bash
+pnpm add eslint-config-ts-strict --dev
 ```
 
-### configuration
+## Usage
 
-The `ts-strict` configuration extends the following ESLint configurations:
+Create an `eslint.config.js` file in your project root:
 
-- `eslint:recommended`
-- `plugin:@typescript-eslint/recommended`
-- `plugin:@typescript-eslint/recommended-requiring-type-checking`
-- `plugin:import/recommended`
-- `plugin:import/typescript`
-- `plugin:jsx-a11y/recommended`
+```javascript
+import tsStrict from "eslint-config-ts-strict";
 
-It also includes additional rules to enforce strict coding standards. The individual rule sets are located in the `rules/` directory and can be extended separately if desired.
+export default [
+  ...tsStrict,
+  {
+    // Add your custom rules here
+    rules: {
+      // Example: override specific rules
+    },
+  },
+];
+```
+
+### Whitespace-only configuration
+
+For scenarios where you only want to enforce whitespace and formatting rules as errors:
+
+```javascript
+import tsStrictWhitespace from "eslint-config-ts-strict/whitespace";
+
+export default [tsStrictWhitespace];
+```
+
+### Advanced Configuration
+
+```javascript
+import tsStrict from "eslint-config-ts-strict";
+
+export default [
+  // Apply the ts-strict configuration
+  ...tsStrict,
+
+  // Global ignores
+  {
+    ignores: [
+      "dist/**",
+      "build/**",
+      "coverage/**",
+      "node_modules/**",
+      "*.min.js",
+    ],
+  },
+
+  // Override specific rules
+  {
+    files: ["**/*.{ts,tsx}"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+        },
+      ],
+    },
+  },
+
+  // Different rules for test files
+  {
+    files: ["**/*.test.{ts,tsx,js,jsx}", "**/*.spec.{ts,tsx,js,jsx}"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
+];
+```
+
+## Peer Dependencies
+
+This configuration requires the following peer dependencies:
+
+- `eslint` >= 9.0.0
+- `@typescript-eslint/eslint-plugin` >= 8.29.1
+- `@typescript-eslint/parser` >= 8.29.1
+- `eslint-plugin-import` >= 2.31.0
+- `eslint-plugin-simple-import-sort` >= 12.1.1
+- `eslint-plugin-unused-imports` >= 3.2.0
+- `@stylistic/eslint-plugin` >= 2.13.0
+- `@eslint/js` >= 9.0.0
+
+## Requirements
+
+- **Node.js** >= 18.18.0
+- **ESLint** >= 9.0.0
+
+This package is designed specifically for ESLint v9's flat config format and does not support legacy `.eslintrc` configurations.
 
 ## Contributing
 

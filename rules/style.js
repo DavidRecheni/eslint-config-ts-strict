@@ -1,7 +1,12 @@
-const semver = require("semver");
-const eslintPkg = require("eslint/package.json");
+import semver from "semver";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import path from "path";
 
-module.exports = {
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const eslintPkg = JSON.parse(readFileSync(path.join(__dirname, "../node_modules/eslint/package.json"), "utf8"));
+
+export default {
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline

@@ -1,12 +1,21 @@
 /* eslint strict: 0, global-require: 0 */
 
-"use strict";
+import test from "tape";
 
-const test = require("tape");
+test("all entry points parse", async (t) => {
+  try {
+    await import("../index.js");
+    t.pass("index does not throw");
+  } catch (e) {
+    t.fail(`index throws: ${e.message}`);
+  }
 
-test("all entry points parse", (t) => {
-  t.doesNotThrow(() => require(".."), "index does not throw");
-  t.doesNotThrow(() => require("../whitespace"), "whitespace does not throw");
+  try {
+    await import("../whitespace.js");
+    t.pass("whitespace does not throw");
+  } catch (e) {
+    t.fail(`whitespace throws: ${e.message}`);
+  }
 
   t.end();
 });
