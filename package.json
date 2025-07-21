@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Very strict ESLint config for projects using TypeScript, React and Prettier. ESLint v9 flat config only.",
   "main": "index.js",
   "type": "module",
@@ -61,7 +61,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "object.assign": "^4.1.7",
-    "object.entries": "^1.1.9",
-    "semver": "^7.7.1"
+    "object.entries": "^1.1.9"
   }
 }

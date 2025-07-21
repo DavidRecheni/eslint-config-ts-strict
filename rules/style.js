@@ -1,10 +1,4 @@
-import semver from "semver";
-import { readFileSync } from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const eslintPkg = JSON.parse(readFileSync(path.join(__dirname, "../node_modules/eslint/package.json"), "utf8"));
+import confusingBrowserGlobals from "confusing-browser-globals";
 
 export default {
   rules: {
@@ -100,12 +94,7 @@ export default {
 
     // require line breaks inside function parentheses if there are line breaks between parameters
     // https://eslint.org/docs/rules/function-paren-newline
-    "function-paren-newline": [
-      "error",
-      semver.satisfies(eslintPkg.version, ">= 6")
-        ? "multiline-arguments"
-        : "consistent",
-    ],
+    "function-paren-newline": ["error", "multiline-arguments"],
 
     // disallow specified identifiers
     // https://eslint.org/docs/rules/id-denylist
