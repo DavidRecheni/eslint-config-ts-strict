@@ -9,16 +9,18 @@ Strongly opinionated ESLint config for projects using TypeScript, React and Pret
 Install the package with `npm`, `yarn`, or `pnpm`:
 
 ```bash
-npm i eslint-config-ts-strict --save-dev
+npm i eslint-config-ts-strict eslint typescript --save-dev
 ```
 
 ```bash
-yarn add eslint-config-ts-strict --dev
+yarn add eslint-config-ts-strict eslint typescript --dev
 ```
 
 ```bash
-pnpm add eslint-config-ts-strict --dev
+pnpm add eslint-config-ts-strict eslint typescript --dev
 ```
+
+That's it! All required ESLint plugins are bundled as dependencies, so you only need to install the config package, ESLint itself, and TypeScript.
 
 ## Usage
 
