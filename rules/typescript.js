@@ -628,6 +628,7 @@ export default {
     "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
     "@typescript-eslint/no-unsafe-function-type": "error",
     "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
     "@typescript-eslint/no-wrapper-object-types": "error",
     "@typescript-eslint/no-unsafe-type-assertion": "warn",
     "@typescript-eslint/related-getter-setter-pairs": "error",

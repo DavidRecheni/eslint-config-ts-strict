@@ -157,6 +157,10 @@ export default {
     // disallow comparisons with the value NaN
     "use-isnan": "error",
 
+    // Disallow assignments that are useless and don't affect the value of a variable
+    // https://eslint.org/docs/rules/no-useless-assignment
+    "no-useless-assignment": "error",
+
     // ensure JSDoc comments are valid
     // https://eslint.org/docs/rules/valid-jsdoc
     "valid-jsdoc": "off",
