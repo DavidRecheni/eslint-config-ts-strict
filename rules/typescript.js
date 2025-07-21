@@ -15,14 +15,6 @@ export default {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
     "@typescript-eslint/ban-tslint-comment": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
-    "brace-style": "off",
-    "@typescript-eslint/brace-style": [
-      "error",
-      "1tbs",
-      { allowSingleLine: true },
-    ],
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/class-literal-property-style.md
     "@typescript-eslint/class-literal-property-style": ["error", "fields"],
 
@@ -76,7 +68,7 @@ export default {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/method-signature-style.md
     "@typescript-eslint/method-signature-style": ["error", "property"],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
     // The `@typescript-eslint/naming-convention` rule allows `leadingUnderscore` and `trailingUnderscore` settings. However, the existing `no-underscore-dangle` rule already takes care of this.
     "naming-convention": "off",
     "@typescript-eslint/naming-convention": [
@@ -98,30 +90,6 @@ export default {
       },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
-    // The TypeScript version also adds 3 new options, all of which should be set to the same value as the base config
-    "comma-dangle": "off",
-    "@typescript-eslint/comma-dangle": [
-      "error",
-      {
-        arrays: "always-multiline",
-        objects: "always-multiline",
-        imports: "always-multiline",
-        exports: "always-multiline",
-        functions: "always-multiline",
-        enums: "always-multiline",
-        generics: "ignore",
-        tuples: "always-multiline",
-      },
-    ],
-
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
-    "comma-spacing": "off",
-    "@typescript-eslint/comma-spacing": [
-      "error",
-      { before: false, after: true },
-    ],
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/default-param-last.md
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "error",
@@ -131,77 +99,8 @@ export default {
     "dot-notation": "off",
     "@typescript-eslint/dot-notation": ["error", { allowKeywords: true }],
 
-    // Replace Airbnb 'func-call-spacing' rule with '@typescript-eslint' version
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
-    "func-call-spacing": "off",
-    "@typescript-eslint/func-call-spacing": ["error", "never"],
-
     "@typescript-eslint/no-deprecated": "error",
     "@typescript-eslint/no-restricted-types": "off",
-    // Replace Airbnb 'indent' rule with '@typescript-eslint' version
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
-    indent: "off",
-    "@typescript-eslint/indent": [
-      "error",
-      2,
-      {
-        SwitchCase: 1,
-        VariableDeclarator: 1,
-        outerIIFEBody: 1,
-        // MemberExpression: null,
-        FunctionDeclaration: {
-          parameters: 1,
-          body: 1,
-        },
-        FunctionExpression: {
-          parameters: 1,
-          body: 1,
-        },
-        CallExpression: {
-          arguments: 1,
-        },
-        ArrayExpression: 1,
-        ObjectExpression: 1,
-        ImportDeclaration: 1,
-        flatTernaryExpressions: false,
-        // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
-        ignoredNodes: [
-          "JSXElement",
-          "JSXElement > *",
-          "JSXAttribute",
-          "JSXIdentifier",
-          "JSXNamespacedName",
-          "JSXMemberExpression",
-          "JSXSpreadAttribute",
-          "JSXExpressionContainer",
-          "JSXOpeningElement",
-          "JSXClosingElement",
-          "JSXFragment",
-          "JSXOpeningFragment",
-          "JSXClosingFragment",
-          "JSXText",
-          "JSXEmptyExpression",
-          "JSXSpreadChild",
-        ],
-        ignoreComments: false,
-      },
-    ],
-
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
-    "keyword-spacing": "off",
-    "@typescript-eslint/keyword-spacing": [
-      "error",
-      {
-        before: true,
-        after: true,
-        overrides: {
-          return: { after: true },
-          throw: { after: true },
-          case: { after: true },
-        },
-      },
-    ],
-
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/member-ordering.md
     "@typescript-eslint/member-ordering": "error",
@@ -508,10 +407,6 @@ export default {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/unified-signatures.md
     "@typescript-eslint/unified-signatures": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-blocks.md
-    "space-before-blocks": "off",
-    "@typescript-eslint/space-before-blocks": "error",
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-duplicate-enum-values.md
     "@typescript-eslint/no-duplicate-enum-values": "error",
 
@@ -564,17 +459,6 @@ export default {
     semi: "off",
     "@typescript-eslint/semi": ["error", "always"],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-before-function-paren.md
-    "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always",
-      },
-    ],
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-await.md
     "require-await": "off",
     "@typescript-eslint/require-await": "off",
@@ -584,31 +468,6 @@ export default {
     "no-return-await": "off",
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-infix-ops.md
-    "space-infix-ops": "off",
-    "@typescript-eslint/space-infix-ops": "error",
-
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
-    "object-curly-spacing": "off",
-    "@typescript-eslint/object-curly-spacing": ["error", "always"],
-    "@typescript-eslint/block-spacing": ["error", "always"],
-    "@typescript-eslint/key-spacing": [
-      "error",
-      {
-        beforeColon: false,
-        afterColon: true,
-        mode: "strict",
-      }],
-    "@typescript-eslint/lines-around-comment": [
-      "error",
-      {
-        allowModuleStart: true,
-        beforeBlockComment: true,
-        afterBlockComment: false,
-        beforeLineComment: true,
-        afterLineComment: false,
-      }
-    ],
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-mixed-enums": "error",
