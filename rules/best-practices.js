@@ -169,12 +169,8 @@ export default {
 
     // disallow use of multiple spaces
     // https://eslint.org/docs/rules/no-multi-spaces
-    "no-multi-spaces": [
-      "error",
-      {
-        ignoreEOLComments: false,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier's spacing decisions
+    "no-multi-spaces": "off",
 
     // disallow use of multiline strings
     // https://eslint.org/docs/rules/no-multi-str

@@ -41,25 +41,8 @@ export default {
     ],
 
     // enforce one true comma style
-    "comma-style": [
-      "error",
-      "last",
-      {
-        exceptions: {
-          ArrayExpression: false,
-          ArrayPattern: false,
-          ArrowFunctionExpression: false,
-          CallExpression: false,
-          FunctionDeclaration: false,
-          FunctionExpression: false,
-          ImportDeclaration: false,
-          ObjectExpression: false,
-          ObjectPattern: false,
-          VariableDeclaration: false,
-          NewExpression: false,
-        },
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "comma-style": "off",
 
     // disallow padding inside computed properties
     // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
@@ -70,7 +53,7 @@ export default {
 
     // enforce newline at the end of file, with no multiple empty lines
     // PRETTIER CONFLICT: This rule can conflict with Prettier's end-of-file handling
-    "eol-last": ["error", "always"],
+    "eol-last": "off",
 
     // https://eslint.org/docs/rules/function-call-argument-newline
     // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
@@ -147,13 +130,8 @@ export default {
 
     // require or disallow newlines around directives
     // https://eslint.org/docs/rules/lines-around-directive
-    "lines-around-directive": [
-      "error",
-      {
-        before: "always",
-        after: "always",
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "lines-around-directive": "off",
 
     // specify the maximum depth that blocks can be nested
     "max-depth": ["off", 4],
@@ -201,7 +179,8 @@ export default {
 
     // enforce a particular style for multiline comments
     // https://eslint.org/docs/rules/multiline-comment-style
-    "multiline-comment-style": ["error", "separate-lines"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "multiline-comment-style": "off",
 
     // require multiline ternary
     // https://eslint.org/docs/rules/multiline-ternary
@@ -224,7 +203,8 @@ export default {
 
     // disallow the omission of parentheses when invoking a constructor with no arguments
     // https://eslint.org/docs/rules/new-parens
-    "new-parens": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "new-parens": "off",
 
     // allow/disallow an empty newline after var statement
     "newline-after-var": "off",
@@ -276,7 +256,8 @@ export default {
     ],
 
     // disallow mixed spaces and tabs for indentation
-    "no-mixed-spaces-and-tabs": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "no-mixed-spaces-and-tabs": "off",
 
     // disallow use of chained assignment expressions
     // https://eslint.org/docs/rules/no-multi-assign
@@ -319,11 +300,11 @@ export default {
 
     // disallow space between function identifier and application
     // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
-    "no-spaced-func": "error",
+    "no-spaced-func": "off",
 
     // disallow tab characters entirely
     // PRETTIER CONFLICT: This rule can conflict with Prettier's indentation choices
-    "no-tabs": "error",
+    "no-tabs": "off",
 
     // disallow the use of ternary operators
     "no-ternary": "off",
@@ -343,11 +324,13 @@ export default {
 
     // disallow whitespace before properties
     // https://eslint.org/docs/rules/no-whitespace-before-property
-    "no-whitespace-before-property": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "no-whitespace-before-property": "off",
 
     // enforce the location of single-line statements
     // https://eslint.org/docs/rules/nonblock-statement-body-position
-    "nonblock-statement-body-position": ["error", "beside", { overrides: {} }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "nonblock-statement-body-position": "off",
 
     // enforce line breaks between braces
     // https://eslint.org/docs/rules/object-curly-newline
@@ -356,19 +339,16 @@ export default {
 
     // enforce "same line" or "multiple line" on object properties.
     // https://eslint.org/docs/rules/object-property-newline
-    "object-property-newline": [
-      "error",
-      {
-        allowAllPropertiesOnSameLine: true,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "object-property-newline": "off",
 
     // allow just one var statement per function
     "one-var": ["error", "never"],
 
     // require a newline around variable declaration
     // https://eslint.org/docs/rules/one-var-declaration-per-line
-    "one-var-declaration-per-line": ["error", "always"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "one-var-declaration-per-line": "off",
 
     // require assignment operator shorthand where possible or prohibit it entirely
     // https://eslint.org/docs/rules/operator-assignment
@@ -380,17 +360,8 @@ export default {
     "operator-linebreak": "off",
 
     // disallow padding within blocks
-    "padded-blocks": [
-      "error",
-      {
-        blocks: "never",
-        classes: "never",
-        switches: "never",
-      },
-      {
-        allowSingleLineBlocks: true,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "padded-blocks": "off",
 
     // Disallow the use of Math.pow in favor of the ** operator
     // https://eslint.org/docs/rules/prefer-exponentiation-operator
@@ -418,7 +389,8 @@ export default {
 
     // Enforce location of semicolons
     // https://eslint.org/docs/rules/semi-style
-    "semi-style": ["error", "last"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "semi-style": "off",
 
     // requires object keys to be sorted
     "sort-keys": ["off", "asc", { caseSensitive: false, natural: true }],
@@ -432,32 +404,13 @@ export default {
 
     // Require or disallow spaces before/after unary operators
     // https://eslint.org/docs/rules/space-unary-ops
-    "space-unary-ops": [
-      "error",
-      {
-        words: true,
-        nonwords: false,
-        overrides: {},
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "space-unary-ops": "off",
 
     // require or disallow a space immediately following the // or /* in a comment
     // https://eslint.org/docs/rules/spaced-comment
-    "spaced-comment": [
-      "error",
-      "always",
-      {
-        line: {
-          exceptions: ["-", "+"],
-          markers: ["=", "!", "/"], // space here to support sprockets directives, slash for TS /// comments
-        },
-        block: {
-          exceptions: ["-", "+"],
-          markers: ["=", "!", ":", "::"], // space here to support sprockets directives and flow comment types
-          balanced: true,
-        },
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "spaced-comment": "off",
 
     // Enforce spacing around colons of switch statements
     // https://eslint.org/docs/rules/switch-colon-spacing
