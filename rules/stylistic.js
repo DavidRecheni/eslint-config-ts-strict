@@ -2,161 +2,89 @@ export default {
   rules: {
     // Stylistic rules that apply to TypeScript
     "lines-between-class-members": "off",
-    "@stylistic/lines-between-class-members": ["error", "always", { "exceptAfterOverload": true }],
+    // PRETTIER CONFLICT: All @stylistic rules are disabled to avoid conflicts with Prettier formatting
+    "@stylistic/lines-between-class-members": "off", // Disabled to avoid conflicts with Prettier
 
-    // Brace style
+    // Brace style - disabled to avoid conflicts with Prettier
     "brace-style": "off",
-    "@stylistic/brace-style": ["error", "1tbs", { allowSingleLine: true }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/brace-style": "off",
 
-    // Comma rules
+    // Comma rules - disabled to avoid conflicts with Prettier
     "comma-dangle": "off",
-    "@stylistic/comma-dangle": [
-      "error",
-      {
-        arrays: "always-multiline",
-        objects: "always-multiline",
-        imports: "always-multiline",
-        exports: "always-multiline",
-        functions: "always-multiline",
-        enums: "always-multiline",
-        generics: "ignore",
-        tuples: "always-multiline",
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/comma-dangle": "off",
 
     "comma-spacing": "off",
-    "@stylistic/comma-spacing": [
-      "error",
-      { before: false, after: true },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/comma-spacing": "off",
 
-    // Function call spacing
+    // Function call spacing - disabled to avoid conflicts with Prettier
     "func-call-spacing": "off",
-    "@stylistic/function-call-spacing": ["error", "never"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/function-call-spacing": "off",
 
-    // Indentation
+    // Indentation - disabled to avoid conflicts with Prettier
     "indent": "off",
-    "@stylistic/indent": [
-      "error",
-      2,
-      {
-        SwitchCase: 1,
-        VariableDeclarator: 1,
-        outerIIFEBody: 1,
-        FunctionDeclaration: {
-          parameters: 1,
-          body: 1,
-        },
-        FunctionExpression: {
-          parameters: 1,
-          body: 1,
-        },
-        CallExpression: {
-          arguments: 1,
-        },
-        ArrayExpression: 1,
-        ObjectExpression: 1,
-        ImportDeclaration: 1,
-        flatTernaryExpressions: false,
-        ignoredNodes: [
-          "JSXElement",
-          "JSXElement > *",
-          "JSXAttribute",
-          "JSXIdentifier",
-          "JSXNamespacedName",
-          "JSXMemberExpression",
-          "JSXSpreadAttribute",
-          "JSXExpressionContainer",
-          "JSXOpeningElement",
-          "JSXClosingElement",
-          "JSXFragment",
-          "JSXOpeningFragment",
-          "JSXClosingFragment",
-          "JSXText",
-          "JSXEmptyExpression",
-          "JSXSpreadChild",
-        ],
-        ignoreComments: false,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/indent": "off",
 
-    // Keyword spacing
+    // Keyword spacing - disabled to avoid conflicts with Prettier
     "keyword-spacing": "off",
-    "@stylistic/keyword-spacing": [
-      "error",
-      {
-        before: true,
-        after: true,
-        overrides: {
-          return: { after: true },
-          throw: { after: true },
-          case: { after: true },
-        },
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/keyword-spacing": "off",
 
-    // Space rules
+    // Space rules - disabled to avoid conflicts with Prettier
     "space-before-blocks": "off",
-    "@stylistic/space-before-blocks": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/space-before-blocks": "off",
 
     "space-before-function-paren": "off",
-    "@stylistic/space-before-function-paren": [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always",
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/space-before-function-paren": "off",
 
     "space-infix-ops": "off",
-    "@stylistic/space-infix-ops": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/space-infix-ops": "off",
 
-    // Object spacing
+    // Object spacing - disabled to avoid conflicts with Prettier
     "object-curly-spacing": "off",
-    "@stylistic/object-curly-spacing": ["error", "always"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/object-curly-spacing": "off",
 
-    // Block spacing
-    "@stylistic/block-spacing": ["error", "always"],
+    // Block spacing - disabled to avoid conflicts with Prettier
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/block-spacing": "off",
 
-    // Key spacing
-    "@stylistic/key-spacing": [
-      "error",
-      {
-        beforeColon: false,
-        afterColon: true,
-        mode: "strict",
-      }
-    ],
+    // Key spacing - disabled to avoid conflicts with Prettier
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/key-spacing": "off",
 
-    // Comments
-    "@stylistic/lines-around-comment": [
-      "error",
-      {
-        allowModuleStart: true,
-        beforeBlockComment: true,
-        afterBlockComment: false,
-        beforeLineComment: true,
-        afterLineComment: false,
-      }
-    ],
+    // Comments - disabled to avoid conflicts with Prettier
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/lines-around-comment": "off",
 
-    // Member delimiter style for interfaces and type literals
-    "@stylistic/member-delimiter-style": "error",
+    // Member delimiter style for interfaces and type literals - disabled to avoid conflicts with Prettier
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/member-delimiter-style": "off",
 
-    // Extra semicolons
+    // Extra semicolons - disabled to avoid conflicts with Prettier
     "no-extra-semi": "off",
-    "@stylistic/no-extra-semi": "error",
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/no-extra-semi": "off",
 
-    // Type annotation spacing
-    "@stylistic/type-annotation-spacing": "error",
+    // Type annotation spacing - disabled to avoid conflicts with Prettier
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/type-annotation-spacing": "off",
 
-    // Quotes
+    // Quotes - disabled to avoid conflicts with Prettier
     "quotes": "off",
-    "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/quotes": "off",
 
-    // Semicolons
+    // Semicolons - disabled to avoid conflicts with Prettier
     "semi": "off",
-    "@stylistic/semi": ["error", "always"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "@stylistic/semi": "off",
   }
 }

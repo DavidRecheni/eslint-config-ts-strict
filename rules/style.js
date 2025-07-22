@@ -13,11 +13,13 @@ export default {
     "array-element-newline": ["off", { multiline: true, minItems: 3 }],
 
     // enforce spacing inside array brackets
-    "array-bracket-spacing": ["error", "never"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "array-bracket-spacing": "off",
 
     // enforce spacing inside single-line blocks
     // https://eslint.org/docs/rules/block-spacing
-    "block-spacing": ["error", "always"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "block-spacing": "off",
 
     // enforce or disallow capitalization of the first letter of a comment
     // https://eslint.org/docs/rules/capitalized-comments
@@ -60,16 +62,19 @@ export default {
     ],
 
     // disallow padding inside computed properties
-    "computed-property-spacing": ["error", "never"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "computed-property-spacing": "off",
 
     // enforces consistent naming when capturing the current execution context
     "consistent-this": "off",
 
     // enforce newline at the end of file, with no multiple empty lines
+    // PRETTIER CONFLICT: This rule can conflict with Prettier's end-of-file handling
     "eol-last": ["error", "always"],
 
     // https://eslint.org/docs/rules/function-call-argument-newline
-    "function-call-argument-newline": ["error", "consistent"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "function-call-argument-newline": "off",
 
     // requires function names to match the name of the variable or property to which they are
     // assigned
@@ -94,7 +99,8 @@ export default {
 
     // require line breaks inside function parentheses if there are line breaks between parameters
     // https://eslint.org/docs/rules/function-paren-newline
-    "function-paren-newline": ["error", "multiline-arguments"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "function-paren-newline": "off",
 
     // disallow specified identifiers
     // https://eslint.org/docs/rules/id-denylist
@@ -109,14 +115,16 @@ export default {
 
     // Enforce the location of arrow function bodies with implicit returns
     // https://eslint.org/docs/rules/implicit-arrow-linebreak
-    "implicit-arrow-linebreak": ["error", "beside"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "implicit-arrow-linebreak": "off",
 
     // specify whether double or single quotes should be used in JSX attributes
     // https://eslint.org/docs/rules/jsx-quotes
     "jsx-quotes": ["off", "prefer-double"],
 
     // enforces spacing between keys and values in object literal properties
-    "key-spacing": ["error", { beforeColon: false, afterColon: true }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "key-spacing": "off",
 
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
@@ -131,6 +139,7 @@ export default {
 
     // dont enforce consistent linebreak style
     // https://eslint.org/docs/rules/linebreak-style
+    // PRETTIER CONFLICT: This rule can conflict with Prettier (already disabled)
     "linebreak-style": 0,
 
     // enforces empty lines around comments
@@ -151,18 +160,8 @@ export default {
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
-    "max-len": [
-      "error",
-      120,
-      2,
-      {
-        ignoreUrls: true,
-        ignoreComments: false,
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule can conflict with Prettier's line wrapping decisions
+    "max-len": "off",
 
     // specify the max number of lines in a file
     // https://eslint.org/docs/rules/max-lines
@@ -236,7 +235,8 @@ export default {
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
     // https://eslint.org/docs/rules/newline-per-chained-call
-    "newline-per-chained-call": ["error", { ignoreChainWithDepth: 4 }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "newline-per-chained-call": "off",
 
     // disallow use of bitwise operators
     // https://eslint.org/docs/rules/no-bitwise
@@ -284,7 +284,8 @@ export default {
 
     // disallow multiple empty lines, only one newline at the end, and no new lines at the beginning
     // https://eslint.org/docs/rules/no-multiple-empty-lines
-    "no-multiple-empty-lines": ["error", { max: 1, maxBOF: 0, maxEOF: 0 }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "no-multiple-empty-lines": "off",
 
     // disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
@@ -317,22 +318,19 @@ export default {
     ],
 
     // disallow space between function identifier and application
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
     "no-spaced-func": "error",
 
     // disallow tab characters entirely
+    // PRETTIER CONFLICT: This rule can conflict with Prettier's indentation choices
     "no-tabs": "error",
 
     // disallow the use of ternary operators
     "no-ternary": "off",
 
     // disallow trailing whitespace at the end of lines
-    "no-trailing-spaces": [
-      "error",
-      {
-        skipBlankLines: false,
-        ignoreComments: false,
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "no-trailing-spaces": "off",
 
     // allow dangling underscores in identifiers
     // https://eslint.org/docs/rules/no-underscore-dangle
@@ -353,27 +351,8 @@ export default {
 
     // enforce line breaks between braces
     // https://eslint.org/docs/rules/object-curly-newline
-    "object-curly-newline": [
-      "error",
-      {
-        ObjectExpression: {
-          minProperties: 4,
-          multiline: true,
-          consistent: true,
-        },
-        ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-        ImportDeclaration: {
-          minProperties: 4,
-          multiline: true,
-          consistent: true,
-        },
-        ExportDeclaration: {
-          minProperties: 4,
-          multiline: true,
-          consistent: true,
-        },
-      },
-    ],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "object-curly-newline": "off",
 
     // enforce "same line" or "multiple line" on object properties.
     // https://eslint.org/docs/rules/object-property-newline
@@ -397,7 +376,8 @@ export default {
 
     // Requires operator at the beginning of the line in multiline statements
     // https://eslint.org/docs/rules/operator-linebreak
-    "operator-linebreak": ["error", "before", { overrides: { "=": "none" } }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "operator-linebreak": "off",
 
     // disallow padding within blocks
     "padded-blocks": [
@@ -433,7 +413,8 @@ export default {
     "require-jsdoc": "off",
 
     // enforce spacing before and after semicolons
-    "semi-spacing": ["error", { before: false, after: true }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "semi-spacing": "off",
 
     // Enforce location of semicolons
     // https://eslint.org/docs/rules/semi-style
@@ -446,7 +427,8 @@ export default {
     "sort-vars": "off",
 
     // require or disallow spaces inside parentheses
-    "space-in-parens": ["error", "never"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "space-in-parens": "off",
 
     // Require or disallow spaces before/after unary operators
     // https://eslint.org/docs/rules/space-unary-ops
@@ -479,11 +461,13 @@ export default {
 
     // Enforce spacing around colons of switch statements
     // https://eslint.org/docs/rules/switch-colon-spacing
-    "switch-colon-spacing": ["error", { after: true, before: false }],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "switch-colon-spacing": "off",
 
     // Require or disallow spacing between template tags and their literals
     // https://eslint.org/docs/rules/template-tag-spacing
-    "template-tag-spacing": ["error", "never"],
+    // PRETTIER CONFLICT: This rule conflicts with Prettier formatting
+    "template-tag-spacing": "off",
 
     // require or disallow the Unicode Byte Order Mark
     // https://eslint.org/docs/rules/unicode-bom
