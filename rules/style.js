@@ -2,6 +2,23 @@ import confusingBrowserGlobals from "confusing-browser-globals";
 
 export default {
   rules: {
+    // Core formatting rules - disabled for Prettier compatibility
+    // PRETTIER CONFLICT: These rules conflict with Prettier formatting
+    "brace-style": "off",
+    "comma-dangle": "off", 
+    "comma-spacing": "off",
+    "func-call-spacing": "off",
+    "indent": "off",
+    "keyword-spacing": "off",
+    "lines-between-class-members": "off",
+    "no-extra-semi": "off",
+    "object-curly-spacing": "off",
+    "quotes": "off",
+    "semi": "off",
+    "space-before-blocks": "off",
+    "space-before-function-paren": "off",
+    "space-infix-ops": "off",
+
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
     // TODO: enable? semver-major

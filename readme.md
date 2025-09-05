@@ -104,7 +104,6 @@ This configuration requires the following peer dependencies:
 - `eslint-plugin-import` >= 2.31.0
 - `eslint-plugin-simple-import-sort` >= 12.1.1
 - `eslint-plugin-unused-imports` >= 3.2.0
-- `@stylistic/eslint-plugin` >= 2.13.0
 - `@eslint/js` >= 9.0.0
 
 ## Requirements

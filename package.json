@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Very strict ESLint config for projects using TypeScript, React and Prettier. ESLint v9 flat config only. Formatting rules disabled to prevent Prettier conflicts.",
   "main": "index.js",
   "type": "module",
@@ -37,7 +37,6 @@
   "devDependencies": {
     "@babel/runtime": "^7.26.0",
     "@eslint/js": "^9.31.0",
-    "@stylistic/eslint-plugin": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
     "babel-tape-runner": "^3.0.0",
@@ -53,7 +52,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^5.2.1",
     "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^8.37.0",
     "confusing-browser-globals": "^1.0.11",

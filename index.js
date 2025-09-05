@@ -3,7 +3,6 @@ import typescriptParser from "@typescript-eslint/parser";
 import eslintPluginImport from "eslint-plugin-import";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import unusedImports from "eslint-plugin-unused-imports";
-import stylistic from "@stylistic/eslint-plugin";
 
 // Import rule configurations
 import bestPracticesRules from "./rules/best-practices.js";
@@ -15,7 +14,6 @@ import es6Rules from "./rules/es6.js";
 import importsRules from "./rules/imports.js";
 import strictRules from "./rules/strict.js";
 import typescriptRules from "./rules/typescript.js";
-import stylisticRules from "./rules/stylistic.js";
 
 export default [
   {
@@ -35,7 +33,6 @@ export default [
       "unused-imports": unusedImports,
       "simple-import-sort": simpleImportSort,
       "import": eslintPluginImport,
-      "@stylistic": stylistic,
     },
     settings: {
       // Apply special parsing for TypeScript files
@@ -65,7 +62,6 @@ export default [
       ...importsRules.rules,
       ...strictRules.rules,
       ...typescriptRules.rules,
-      ...stylisticRules.rules,
     },
   },
 ];
