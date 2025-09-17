@@ -5,7 +5,7 @@ export default {
     // Core formatting rules - disabled for Prettier compatibility
     // PRETTIER CONFLICT: These rules conflict with Prettier formatting
     "brace-style": "off",
-    "comma-dangle": "off", 
+    "comma-dangle": "off",
     "comma-spacing": "off",
     "func-call-spacing": "off",
     "indent": "off",
@@ -290,7 +290,7 @@ export default {
     "no-negated-condition": "off",
 
     // disallow nested ternary expressions
-    "no-nested-ternary": "error",
+    "no-nested-ternary": "warn",
 
     // disallow use of the Object constructor
     "no-new-object": "error",

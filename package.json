@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-strict",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Very strict ESLint config for projects using TypeScript, React and Prettier. ESLint v9 flat config only. Formatting rules disabled to prevent Prettier conflicts.",
   "main": "index.js",
   "type": "module",
