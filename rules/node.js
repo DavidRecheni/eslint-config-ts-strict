@@ -35,5 +35,7 @@ export default {
 
     // disallow use of synchronous methods (off by default)
     "no-sync": "off",
+
+    "preserve-caught-error": "warn",
   },
 };

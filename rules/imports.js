@@ -271,5 +271,7 @@ export default {
 
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
     "import/no-empty-named-blocks": "error",
+
+    "import/enforce-node-protocol-usage": "off",
   },
 };
